@@ -1,0 +1,326 @@
+* { /* V2.10 - 8:00am a 12:30 y de 2:00 a 5:00pm*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    /* font-family: "Poppins", sans-serif; */
+	/* background-color: rgb(230, 240, 227); */
+    background: rgb(189, 203, 222);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+}
+
+li {
+    background: rgb(0, 105, 211);
+    font-style: none;
+    font-size: 2.2rem;
+    height: max-content;
+    color: white;
+    list-style: none;
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li a {
+    text-decoration: none;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+    transition: 0.35s ease-out;
+    align-content: center;
+}
+
+li a:hover {
+    color: rgb(27, 28, 90);
+    background: rgb(166, 189, 223);
+}
+
+.pages-div {
+    background: transparent;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* EMPIEZA EL BODY */
+
+.title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: max-content;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd54f;
+
+    h3 {
+        font-size: 2.6rem;
+        color: rgb(64, 50, 126)
+    }
+
+}
+
+section {
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    img {
+        width: 80rem;
+        height: 50rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+        font-size: 2rem;
+        background: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 95%;
+    }
+}
+
+div {
+   /* background: rgb(166, 189, 223); */
+   /* background: rgb(189, 203, 222); */
+   background: transparent;
+}
+
+.info1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    min-width: 35rem;
+    height: 50rem;
+    flex-grow: 1;
+}
+
+.img-local img{
+    border: 0.5rem white solid;
+    width: 66%;
+    height: 95%;
+    max-width: 65rem;
+    min-width: 35rem;
+}
+
+.span {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 1rem;
+    height: max-content;
+    padding: 1rem;
+    width: 58rem;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    color: rgb(27, 28, 90);
+
+    h3 {
+        font-size: 2.5rem;
+        
+    }
+}
+
+.info2 iframe{
+    height: 50rem;
+    width: 50rem;
+    margin: 2rem;
+    border-radius: 3rem;
+} 
+
+.info2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.horario-div {
+    width: 102rem;
+    height: 100%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    /* background: rgb(189, 203, 222); */
+    background-image: url('https://i.pinimg.com/736x/30/c7/a2/30c7a2d9118bf121e916aa67b355b275.jpg');
+    border: 0.4rem solid white;
+    border-radius: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    background: rgb(255, 255, 255);
+    color: rgb(27, 28, 90);
+    padding: 0.8rem;
+    border: 0.250rem solid rgb(0, 105, 211);
+    border-radius: 2rem;
+    font-size: 2.8rem;
+    width: max-content;
+    align-self: center;
+}
+
+.horario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.dias {
+    background: rgb(0, 105, 211);
+    opacity: 80%;
+    padding: 1rem;
+    margin: 0.8rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+   /*  border: 0.250rem solid rgb(255, 255, 255); */
+    border-radius: 2rem;
+    box-shadow: 0rem 0.5rem 0.2rem rgba(0, 0, 0, 0.6);
+    width: 27rem;
+    max-width: 40rem;
+    min-width: 27rem;
+    height: 24rem;
+    transition: 0.3s ease-in;
+
+    h3 {
+        color: white;
+        font-size: 2.4rem;
+    }
+}
+
+.dias:hover {
+    opacity: 100%;
+}
+
+#open-closed {
+    font-size: 3.5rem;
+    color:rgb(255, 255, 255)
+}
+
+.clock {
+    background: white;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    color: rgb(0, 105, 211);
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.750rem;
+}
+
+.start-div {
+    width: 44rem;
+    height: 100%;
+    padding: 1rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+    border: 0.4rem solid white;
+    border-radius: 1.4rem;
+    background-image: url('https://i.pinimg.com/736x/d2/c0/98/d2c09808ab4c5946bed7bd7140c9b431.jpg');
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+
+}
+
+.slider-container {
+    width: 40rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in;
+  }
+
+.buttons-div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    padding: 0.8rem;
+} 
+
+.more-info-div {
+    background: rgb(0, 105, 211);
+    border-radius: 1rem;
+    border: 0.2rem white solid;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.750rem;
+    transition: 0.4s ease-in-out;
+}
+
+.more-info-div:hover {
+    color: rgb(27, 28, 90);
+    background: rgb(166, 189, 223);
+    border: 0.2rem rgb(27, 28, 90) solid;
+}
+
+.map iframe {
+    width: 50rem;
+    height: 50rem;
+}
+  
