@@ -1,0 +1,143 @@
+* { /* V2.10 - 8:00am a 12:30 y de 2:00 a 5:00pm*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    /* font-family: "Poppins", sans-serif; */
+	background: rgb(189, 203, 222);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+}
+
+li {
+    background: rgb(0, 105, 211);
+    font-style: none;
+    font-size: 2.2rem;
+    height: max-content;
+    color: white;
+    list-style: none;
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+    transition: 0.35s ease-out;
+    align-content: center;
+}
+
+a:hover {
+    color: rgb(27, 28, 90);
+    background: rgb(166, 189, 223);
+}
+
+.pages-div {
+    background: transparent;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* EMPIEZA EL BODY */
+
+.title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: max-content;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd54f;
+    h3 {
+        font-size: 2.6rem;
+        color: rgb(64, 50, 126)
+    }
+
+}
+
+.location-sec {
+    width: 100%;
+    min-height: 60rem;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.location-div {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 55rem;
+    flex-grow: 1;
+    border: 0.250rem solid rgb(0, 105, 211);
+    border-radius: 2rem;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+    }
+}
+
+.span {
+    background: white;
+    border: 0.250rem solid rgb(0, 105, 211);
+    border-radius: 2rem;
+    max-width: 70rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    height: max-content;
+    color: rgb(27, 28, 90);
+
+    h3 {
+        font-size: 2.7rem;
+        align-self: center;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+}

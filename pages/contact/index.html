@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto & Coma - Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <nav>
+        <li>
+            <a href="../../index.html"><div class="pages-div"><i class="fa-sharp fa-solid fa-house"></i><span>INICIO</span></div></a>
+            <a href="../services/index.html"><div class="pages-div"><i class="fa-sharp fa-solid fa-shop"></i><span>SERVICIOS</span></div></a>
+            <a href=""><div class="pages-div"><i class="fa-sharp fa-solid fa-envelope"></i><span>CONTACTOS</span></div></a>
+            <a href="../location/index.html"><div class="pages-div"><i class="fa-solid fa-map-location-dot"></i><span>UBICACIÓN</span></div></a>
+        </li>
+    </nav>
+</header>
+<body>
+    <div class="title">
+        <h3>MEDIOS DE CONTACTO</h3>
+    </div>
+    <section class="contact-options">
+    <h3 class="subtitle">¿Tienes alguna duda o quieres más información?</h3>
+    <h3 class="subtitle2">¡Contamos con opciones de contacto para poder ayudarte!</h3><br>
+
+        <div class="contact-media-div">
+
+            <div class="media-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icono-contacto">
+                <span>El medio principal de contacto, te atenderemos lo más rápido posible teniendo en cuenta el horario de atención, te ayudaremos en lo que necesites.</span>
+                <a href="https://wa.link/y4hnts" class="boton-wpp"><i class="fa-brands fa-whatsapp"></i><p>Contactar por WhatsApp</p></a>
+            </div>
+
+            <div class="media-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Correo" class="icono-contacto">
+                <span>Medio adicional de contacto y más profesional, las consultas por este medio requieren una redacción detallada.</span>
+                <a onclick="copiarYIrAGmail()" class="boton-gmail"><i class="fa-regular fa-envelope"></i><p>Copiar correo e ir a gmail</p></a>
+            </div>
+
+        </div>
+      
+    </section>
+
+    <script>
+  function copiarYIrAGmail() {
+    const correo = "Luen1306@hotmail.com";
+    navigator.clipboard.writeText(correo).then(() => {
+      alert("Acabas de copiar el correo, se te dirigirá a Gmail para redactar un mensaje.");
+      window.open("https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJnsnwzBcNBHwrKQTLCqDjVlCDbwMnQLhmMRfbWHDWfRBlqFlblXpKWNgFPHnHCxpwxhg", "_blank");
+    }).catch(err => {
+      console.error("Error al copiar el correo:", err);
+    });
+  }
+</script>
+
+    
+</body>
+</html>
